@@ -19,7 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             child: Center(
               child: Container(
                 margin: EdgeInsets.only(top: 150),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage("assets/images/dark.jpg"),
                   ),
@@ -31,14 +31,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "WELCOME TO",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 23,
                   ),
                 ),
-                Text(
+                const Text(
                   "AYNA GHOR",
                   style: TextStyle(
                       color: Colors.red,
@@ -46,7 +46,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       fontWeight: FontWeight.bold),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
 
@@ -55,13 +55,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
                   },
 
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.double_arrow,
                     size: 20,
                     color: Colors.black,
                   ),
 
-                  label: Text(
+                  label: const Text(
                     'Continue',
                     style: TextStyle(
                       color: Colors.black,
